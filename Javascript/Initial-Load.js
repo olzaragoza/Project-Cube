@@ -1,0 +1,1 @@
+var canvas=document.getElementById("canvas"), world=new World(3), player=new Player(world), renderer=new Renderer(canvas, world, player), save=new Save(world,player);
