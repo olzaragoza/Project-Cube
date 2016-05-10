@@ -21,7 +21,7 @@ Minecraft and Project Cube are very different, but build around the same idea.
 
 | Minecraft | Project Cube |
 |---|---|
-| Mod Support | Free |
+| Mod Support | Free/Open-Source |
 | Time/Day Cycle | Textured/Bare Color Modes |
 | Survival Mode | Easy Access Options Bar |
 | 3D Support | No Java Required |
