@@ -94,7 +94,6 @@ nodeType.cobweb={id:35,color:'#FFFFFF',texture:function(face)
 {return[11,0];},transparent:true,solid:true}
 nodeType.bedrock={id:36,color:'#222222',texture:function(face)
 {return[1,1];},transparent:false,solid:true}
-
-if (nodeType.lava+nodeType.water) {
-    return[2,4]
-}
+//if (nodeType.lava+nodeType.water) {
+//    return[2,4]
+//}
