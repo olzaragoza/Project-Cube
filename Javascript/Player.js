@@ -60,14 +60,14 @@ Player.prototype.update = function() {
   this.rotTrig = {cosx:Math.cos(this.rotation.x), sinx:Math.sin(this.rotation.x), cosy:Math.cos(this.rotation.y), siny:Math.sin(this.rotation.y)};
   var b = this.speed * this.elapsed * this.rotTrig.siny, c = this.speed * this.elapsed, d = this.speed * this.elapsed * this.rotTrig.cosy;
   this.delta.x = 0;
-//this.delta.y = 0; WIP Not Recommended
+  this.delta.y = 0; //WIP Fly Function
   this.delta.z = 0;
   this.gravity || (this.velocity = this.delta.y = 0);
   this.keys.w && (this.delta.x -= b, this.delta.z += d);
   this.keys.s && (this.delta.x += b, this.delta.z -= d);
   this.keys.d && (this.delta.x += d, this.delta.z += b);
   this.keys.a && (this.delta.x -= d, this.delta.z -= b);
-//this.keys.r && (this.delta.x -= b, this.delta.z += d+0.1); WIP Not Recommended
+  this.keys.r && (this.delta.x -= b, this.delta.z += d+0.1); //WIP Run Function
   this.keys[32] && this.gravity && !this.delta.y && (this.velocity = this.jumpSpeed);
   this.keys[33] && !this.gravity && (this.delta.y += c);
   this.keys[34] && !this.gravity && (this.delta.y -= c);
