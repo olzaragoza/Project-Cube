@@ -68,7 +68,7 @@ nodeType.purple={id:23,color:'#6E0FD3',texture:function(face)
 nodeType.water={id:24,color:'#5E65E1',texture:function(face)
 {return[14,12];},transparent:true,solid:false}
 nodeType.lava={id:25,color:'#FF1408',texture:function(face)
-{return[14,15];},transparent:false,solid:true}
+{return[14,15];},transparent:false,solid:false}
 nodeType.darkgray={id:26,color:'#4B4B4B',texture:function(face)
 {return[2,7];},transparent:false,solid:true}
 nodeType.gray={id:27,color:'#949494',texture:function(face)
