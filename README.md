@@ -1,3 +1,6 @@
+##Important
+This is the experimental branch of Project Cube, and has many unstable features that need fixing. Use at your own risk.
+
 ##Official Pages
 http://b-train04.github.io/Project-Cube/<br>
 https://github.com/B-Train04/Project-Cube/wiki<br>
