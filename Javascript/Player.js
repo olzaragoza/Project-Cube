@@ -9,7 +9,7 @@ function Player(b) {
   this.speed = 5;
   this.rSpeed = 2.5;
   this.velocity = 0;
-  this.jumpSpeed = this.fallSpeed = 8;
+  this.jumpSpeed = this.fallSpeed = 7;
   this.acceleration = 21;
   this.firstUpdate = this.collision = this.gravity = !0;
   this.lastUpdate = (new Date).getTime();
@@ -67,7 +67,7 @@ Player.prototype.update = function() {
   this.keys.s && (this.delta.x += b, this.delta.z -= d);
   this.keys.d && (this.delta.x += d, this.delta.z += b);
   this.keys.a && (this.delta.x -= d, this.delta.z -= b);
-  this.keys.r && (this.delta.x -= b, this.delta.z += d+0.1); //WIP Run Function
+  this.keys.r && (this.delta.x -= b*1.5, this.delta.z += d*1.5); //WIP Run Function
   this.keys[32] && this.gravity && !this.delta.y && (this.velocity = this.jumpSpeed);
   this.keys[33] && !this.gravity && (this.delta.y += c);
   this.keys[34] && !this.gravity && (this.delta.y -= c);
