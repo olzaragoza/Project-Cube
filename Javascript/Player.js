@@ -9,7 +9,7 @@ function Player(b) {
   this.speed = 5;
   this.rSpeed = 2.5;
   this.velocity = 0;
-  this.jumpSpeed = this.fallSpeed = 7;
+  this.jumpSpeed = this.fallSpeed = this.fly = 7;
   this.acceleration = 21;
   this.firstUpdate = this.collision = this.gravity = !0;
   this.lastUpdate = (new Date).getTime();
